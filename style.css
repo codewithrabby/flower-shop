@@ -45,6 +45,43 @@ nav a{
 }
 .banner p{
     font-size: 1.3rem;
+    color: grey;
+}
+
+/* Flower Section */
+.flower{
+    margin-top: 150px;
+}
+.flower-lover{
+    display: flex;
+    gap: 50px;
+}
+.image-container{
+    position: relative;
+    display: inline-block;
+}
+.main-img{
+    display: block;
+}
+.trusted-badge{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: -100px;
+    right: -80px;
+    z-index: 10;
+}
+.flower-lover-right{
+    margin-top: 50px;
+}
+.flower-lover h2{
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+.flower-lover li{
+    margin-left: 25px;
+    font-size: 1.3rem;
+    color: grey;
 }
 
 /* Subscribe Section */
