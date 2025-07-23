@@ -7,6 +7,9 @@
     max-width: 1280px;
     margin: 30px auto;
 }
+.strong{
+    color: orangered;
+}
 
 /* nav bar section */
 nav{
@@ -40,9 +43,43 @@ nav a{
 .banner h1{
     font-size: 3.5rem;
 }
-.span{
-    color: orangered;
-}
 .banner p{
     font-size: 1.3rem;
+}
+
+/* Subscribe Section */
+.subscribe{
+    background-image: url(./assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    height: 300px;
+}
+.subscribe h2{
+    font-size: 2.6rem;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.subscribe form{
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+.subscribe form input{
+    padding: 12px 15px;
+    font-size: 1rem;
+    background-color: white;
+    color: white;
+    border: none;
+    width: 600px;
+}
+.subscribe form button{
+    padding: 12px 15px;
+    font-size: 1rem;
+    background-color: orangered;
+    color: white;
+    border: none;
+    width: 180px;
 }
