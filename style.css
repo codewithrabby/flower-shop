@@ -319,6 +319,7 @@ footer li a{
     .banner p {
         font-size: 1rem;
         padding: 0px 10px;
+        margin-top: 15px;
     }
 
     /* Media Query of Our Plants Section */
@@ -334,6 +335,7 @@ footer li a{
     .our-plants-head p {
         font-size: 1rem;
         padding: 0 10px;
+        margin-top: 15px;
     }
     .product-card button {
         padding: 8px 20px;
