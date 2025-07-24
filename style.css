@@ -1,5 +1,4 @@
 /* Shared Section */
-
 *{
     padding: 0;
     margin: 0;
@@ -35,8 +34,6 @@ nav a{
     font-weight: bold;
 }
 
-
-
 /* Banner Section */
 .banner{
     display: flex;
@@ -52,9 +49,6 @@ nav a{
     font-size: 1.3rem;
     color: grey;
 }
-
-
-
 
 /* Our Plants Section */
 .our-plants-head h2{
@@ -96,9 +90,6 @@ nav a{
     font-weight: bold;
 }
 
-
-
-
 /* Flower Section */
 .flower{
     margin-top: 150px;
@@ -121,6 +112,13 @@ nav a{
     top: -100px;
     right: -80px;
     z-index: 10;
+
+
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 .flower-lover-right{
     margin-top: 30px;
@@ -134,8 +132,6 @@ nav a{
     font-size: 1.3rem;
     color: grey;
 }
-
-
 
 /* Deal Section */
 .deal-head{
@@ -209,10 +205,6 @@ nav a{
     font-weight: bold;
 }
 
-
-
-
-
 /* Subscribe Section */
 .subscribe{
     background-image: url(./assets/news-letter-bg.png);
@@ -251,10 +243,6 @@ nav a{
     width: 180px;
 }
 
-
-
-
-
 /* Footer Section */
 footer{
     display: flex;
@@ -276,4 +264,204 @@ footer li a{
 }
 .footer-social-icon a{
     margin: 0 10px;
+}
+
+
+/* Media Query Section */
+
+@media (max-width: 576px) {
+    
+    /* Media Query of Nav Section */
+    nav {
+        flex-direction: flex;
+        align-items: flex-end;
+        gap: 10px;
+        margin: 0 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav ul li {
+        display: none;
+    }
+    nav ul li:last-child {
+        display: block;
+    }
+    nav a {
+        display: block;
+        padding: 8px 0;
+    }
+
+    /* Media Query of Banner Section */
+    .banner {
+        flex-direction: column;
+        height: auto;
+        text-align: left;
+        padding: 20px 10px;
+        gap: 20px;
+    }
+    .banner > div:first-child {
+        order: 2;
+    }
+    .banner > div:last-child {
+        order: 1;
+    }
+    .banner img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .banner h1 {
+        font-size: 2rem;
+    }
+    .banner p {
+        font-size: 1rem;
+    }
+
+    /* Media Query of Our Plants Section */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 10px;
+    }
+    .our-plants-head h2 {
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+    .our-plants-head p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    .product-card button {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+    .product-name {
+        font-size: 1rem;
+    }
+    .product-price {
+        font-size: 0.95rem;
+    }
+
+
+    /* Media Query of Our Flower Section */
+    .flower-lover {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        margin: 0 10px;
+    }
+    .flower-lover-right {
+        margin-top: 0;
+    }
+    .flower-lover h2 {
+        font-size: 2rem;
+    }
+    .flower-lover li {
+        font-size: 1rem;
+        margin-left: 18px;
+    }
+    .trusted-badge {
+        display: none;
+    }
+    .main-img {
+        width: 100%;
+        height: auto;
+    }
+    .image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Media Query of Deal Section */
+    .deal-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        margin: 0 10px;
+    }
+    .left-column,
+    .right-column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    .left-deal-card,
+    .right-deal-card {
+        height: auto;
+        width: 100%;
+    }
+    .left-deal-card img,
+    .right-deal-card img {
+        height: auto;
+    }
+    .left-deal-text,
+    .right-deal-text {
+        font-size: 1.1rem;
+        padding: 20px;
+    }
+    .deal-head h2 {
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+    .deal-head p {
+        font-size: 1rem;
+        margin: 15px 0 50px;
+        padding: 0 10px;
+    }
+
+    /* Media Query of Subscribe Section */
+
+
+    /* Media Query of Footer Section */
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 0 20px;
+        margin: 0 10px;
+    }
+    .footer-logo p {
+        font-size: 1rem;
+    }
+    footer > div:nth-child(2),
+    footer > div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer li {
+        line-height: 30px;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-social-icon {
+        display: flex;
+        justify-content: flex-start;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .footer-social-icon a img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@keyframes spin {
+    0%{
+        
+    }
+    50%{
+        scale: 1.5;
+        transform: rotate(0);
+    }
+    100%{
+        scale: 1.5;
+        transform: rotate(360deg);
+    }
 }
