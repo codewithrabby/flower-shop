@@ -33,6 +33,9 @@ nav a{
 #home{
     font-weight: bold;
 }
+
+
+
 /* banner section */
 .banner{
     display: flex;
@@ -48,6 +51,9 @@ nav a{
     font-size: 1.3rem;
     color: grey;
 }
+
+
+
 
 /* Our Plants */
 .our-plants-head h2{
@@ -90,6 +96,8 @@ nav a{
 }
 
 
+
+
 /* Flower Section */
 .flower{
     margin-top: 150px;
@@ -114,7 +122,7 @@ nav a{
     z-index: 10;
 }
 .flower-lover-right{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .flower-lover h2{
     font-size: 2.6rem;
@@ -125,6 +133,8 @@ nav a{
     font-size: 1.3rem;
     color: grey;
 }
+
+
 
 /* Deal Section */
 .deal-head{
@@ -199,6 +209,9 @@ nav a{
 }
 
 
+
+
+
 /* Subscribe Section */
 .subscribe{
     background-image: url(./assets/news-letter-bg.png);
@@ -208,6 +221,7 @@ nav a{
     text-align: center;
     color: white;
     height: 300px;
+    margin-top: 100px;
 }
 .subscribe h2{
     font-size: 2.6rem;
@@ -235,6 +249,9 @@ nav a{
     border: none;
     width: 180px;
 }
+
+
+
 
 
 /* Footer Section */
