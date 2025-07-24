@@ -4,7 +4,7 @@
     font-family: "Poppins", sans-serif;
 }
 .container{
-    max-width: 1280px;
+    max-width: 1140px;
     margin: 30px auto;
 }
 .strong{
@@ -29,9 +29,10 @@ nav a{
     text-decoration: none;
     color: black;
     font-size: 1.1rem;
+}
+#home{
     font-weight: bold;
 }
-
 /* banner section */
 .banner{
     display: flex;
@@ -47,6 +48,8 @@ nav a{
     font-size: 1.3rem;
     color: grey;
 }
+
+
 
 /* Flower Section */
 .flower{
@@ -84,6 +87,79 @@ nav a{
     color: grey;
 }
 
+/* Deal Section */
+.deal-head{
+    text-align: center;
+}
+.deal-head h2{
+    margin-top: 100px;
+    font-size: 2.6rem;
+}
+.deal-head p{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    color: grey;
+    font-size: 1.3rem;
+}
+.deal-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    height: 425px;
+}
+.left-deal-card{
+    position: relative;
+    overflow: hidden;
+}
+.left-deal-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+.left-deal-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+.left-deal-card a{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.right-deal-card{
+    position: relative;
+    overflow: hidden;
+}
+.right-deal-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+.right-deal-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+.right-deal-card a{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
 /* Subscribe Section */
 .subscribe{
     background-image: url(./assets/news-letter-bg.png);
@@ -119,4 +195,28 @@ nav a{
     color: white;
     border: none;
     width: 180px;
+}
+
+
+/* Footer Section */
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo p{
+    color: gray;
+    font-size: 1.3rem;
+    margin-top: 15px;
+}
+footer li{
+    list-style: none;
+    line-height: 50px;
+}
+footer li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 1rem;
+}
+.footer-social-icon a{
+    margin: 0 10px;
 }
