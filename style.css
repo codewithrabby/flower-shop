@@ -298,7 +298,6 @@ footer li a{
         flex-direction: column;
         height: auto;
         text-align: left;
-        padding: 20px 10px;
         gap: 20px;
     }
     .banner > div:first-child {
@@ -315,9 +314,11 @@ footer li a{
     }
     .banner h1 {
         font-size: 2rem;
+        padding: 0px 10px;
     }
     .banner p {
         font-size: 1rem;
+        padding: 0px 10px;
     }
 
     /* Media Query of Our Plants Section */
