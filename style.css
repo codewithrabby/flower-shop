@@ -1,3 +1,5 @@
+/* Shared Section */
+
 *{
     padding: 0;
     margin: 0;
@@ -11,10 +13,9 @@
     color: orangered;
 }
 
-/* nav bar section */
+/* Nav Bar Section */
 nav{
     display: flex;
-    justify-content: center;
     align-items: center;
     justify-content: space-between;
 }
@@ -36,7 +37,7 @@ nav a{
 
 
 
-/* banner section */
+/* Banner Section */
 .banner{
     display: flex;
     justify-content: end;
@@ -55,7 +56,7 @@ nav a{
 
 
 
-/* Our Plants */
+/* Our Plants Section */
 .our-plants-head h2{
     font-size: 2.6rem;
     text-align: center;
@@ -237,7 +238,7 @@ nav a{
     padding: 12px 15px;
     font-size: 1rem;
     background-color: white;
-    color: white;
+    columns: black;
     border: none;
     width: 600px;
 }
