@@ -405,8 +405,13 @@ footer li a{
     }
     .left-deal-text,
     .right-deal-text {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         padding: 20px;
+        margin-bottom: 10px;
+    }
+    .left-deal-card a,
+    .right-deal-card a{
+        font-size: 1rem;
     }
     .deal-head h2 {
         font-size: 2rem;
